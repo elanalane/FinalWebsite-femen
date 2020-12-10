@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>femen</title>
+<link href="../../FinalWebsite/femen.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="banner" id="countdown">
+		<p class="sale"><strong>SALE! 50% off*</strong> Ends:</p>
+		<p class="sale" id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 12, 2020 11:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+		</div>
+	
+	<nav>	
+		<ul>
+			<li><a href="#beliefs">beliefs</a></li>
+			<li><a href="#ad">video</a></li>
+			<li><a href="#loop">home</a></li>
+		</ul>
+	</nav>
+	
+	<video id="loop" width="100%" autoplay muted loop>
+		<source src="ARTF2223_IndexVideo.mp4" type="video/mp4">
+	</video>
+		<script>
+    		document.getElementById('vid').play();
+		</script>
+	
+	<div class="banner"></div>
+	
+	<div class="top">
+		<p class="home"><img src="images/BottleWaterPurple.png" alt="Bottle of Femen splashing in water" style="float: left; width: 50%; margin-right: 4%; margin-left: 4%;">At <a href="#">fémen</a> haircare we have two central beliefs: one, that some products should be locked up in stores while others aren’t; and two, that the decision about which products get locked up should be based on the skin color of the product’s main consumers.</p>
+	</div>
+		
+	<div class="white1">
+		<video id="ad" class="brand" width="1043" height="583" controls>
+  			<source src="ARTF2223_ProductVideo.mp4" type="video/mp4">
+		</video>
+		
+		<div id="beliefs" class="about">
+			<p class="why">Why locked up?</p>
+			<p class="simple">Simple!</p>
+			<p class="statistics">Statistically speaking, our consumers cannot be trusted to refrain from stealing our products, so we decided to protect them!</p>
+			<p class="straight">Our products for straight hair use the tagline, “Haircare on the Open Shelves.”</p>
+			<p class="store">Read about <a href="https://www.nbcnews.com/news/us-news/walmart-s-practice-locking-black-beauty-products-some-stores-raises-n967206">these cool stores</a> that locked up their curly haircare before we did!</p>
+		</div>
+	</div>
+	
+	<img src="DownloadedAssets/CurlyHair.jpeg" style="width: 100%;">
+	
+	
+	<p class="belief"><img src="images/ARTF2223_ProductDesignShadow.png" style="float: left; width: 30%; margin-right: 10%; margin-left: 4%;">At <a href="#">fémen</a>, we believe certain products should be locked up, entirely based on the clientele.</p>
+	
+	<div class="white2">
+		<p class="find">Find your locked up haircare today!</p>
+		<img id="logobottom" src="images/ARTF2223_Logo-02.png" alt="Femen logo purple" style="width: 362px;">
+		<a href="#"><button type="button" class="button">back to top</button></a>
+	</div>
+</body>
+</html>
